@@ -1,0 +1,15 @@
+[package]
+name = "strict_decimal"
+version = "0.1.0"
+edition = "2024"
+
+description = "Fail-fast decimal numbers and an RPN stack for arithmetic"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+debug_err = "0.1.0"
+rust_decimal = { version = "1.39.0", features = [ "macros", "maths" ] }
+
+[dev-dependencies]
+proptest = "1.9.0"
+
